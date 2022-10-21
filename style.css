@@ -234,3 +234,46 @@ body{
     padding-top: 20px;
     flex-wrap: wrap;
 }
+
+
+/* styled banner for new designs */
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("banner/b1.jpg");
+    min-width: 580px;
+    height: 50vh;
+    
+    background-size: cover;
+    background-position: center;
+    color: rgba(255, 255, 255, 0.642);
+}
+
+
+#sm-banner .banner-box h2{
+    color:white;
+}
+
+
+#sm-banner .banner-box button{
+    display: inline-block;
+    border-radius: 5px;
+    background-color: white;
+    border:none;
+    color: rgb(5, 5, 5);
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    width: 100px;
+    
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 5px;  
+}
+
+
+
