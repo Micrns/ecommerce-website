@@ -94,6 +94,13 @@ body{
 #navbar li a:hover, #navbar li a.active{
     color:grey;
 }
+#close{display: none;}
+
+#mobile{
+    display: none;
+    align-items: center;
+
+}
 
 /*home page */
 
@@ -245,11 +252,11 @@ body{
     align-items: center;
     text-align: center;
     background-image: url("banner/b1.jpg");
-    min-width: 580px;
+    width: 100%;
     height: 50vh;
-    
+    background-position: right 0;
     background-size: cover;
-    background-position: center;
+    
     color: rgba(255, 255, 255, 0.642);
 }
 
@@ -272,8 +279,170 @@ body{
     
     transition: 0.5s;
     cursor: pointer;
-    margin: 5px;  
+    margin: 20px;  
 }
 
+#sm-banner .banner-box button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+
+#sm-banner .banner-box button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+
+}
+#sm-banner .banner-box button:hover span{
+    padding-right: 40px;
+}
+
+#sm-banner .button-box button:hover span:after{
+    opacity:1;
+    right:0;
+}
+
+
+/*footer*/
+
+/*resize image*/ 
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+
+footer .col .logo{
+    margin-bottom: -30px;
+    margin-top: -45px;
+    margin-left: -20px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom:20px;
+
+}
+
+footer p{
+    font-size:13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    /* margin: top, right, bottom, left */
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+
+footer .follow-us{
+    margin-top: 5px;
+}
+
+footer .follow-us i{
+    padding-right: 5px;
+    color:#465b52;
+    cursor: pointer;
+}
+
+footer a:hover{
+    color:#465b52
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+
+/* media query */
+
+@media (max-width: 799px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top:0;
+        right: -300px;
+        width: 200px;
+        height:100vh;
+        background-color: rgb(87, 89, 91);
+        box-shadow: 0 40px 60px rgb(0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+   
+
+    #navbar li{
+        margin-bottom: 20px;
+    }
+
+    #mobile, #mobile a{
+        color: white;
+        
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    
+    }
+
+    #mobile i{
+        padding-left: 20px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 25px;
+        color: white;
+        font-size:15px;
+    
+    }
+
+    #lg-bag{
+        display:none;
+
+    }
+
+    #hero{
+        height: 70vh;
+        padding: 0 70px;
+        
+        background-position: top 20% right 70%;
+    }
+
+
+    
+}
 
 
