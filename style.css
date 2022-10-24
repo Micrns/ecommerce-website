@@ -304,6 +304,68 @@ body{
 
 /*footer*/
 
+/*resize image*/ 
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+
+footer .col .logo{
+    margin-bottom: -30px;
+    margin-top: -45px;
+    margin-left: -20px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom:20px;
+
+}
+
+footer p{
+    font-size:13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    /* margin: top, right, bottom, left */
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+
+footer .follow-us{
+    margin-top: 5px;
+}
+
+footer .follow-us i{
+    padding-right: 5px;
+    color:#465b52;
+    cursor: pointer;
+}
+
+footer a:hover{
+    color:#465b52
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
 
 
 
